@@ -3,6 +3,7 @@ const router = express.Router();
 const catchAsync = require("../utils/catchAsync");
 const { campgroundSchema } = require("../schemas");
 const { isLoggedIn } = require("../middleware");
+const flash = require("connect-flash");
 
 const ExpressError = require("../utils/ExpressError");
 const Campground = require("../models/campground");
